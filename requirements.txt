@@ -1,0 +1,27 @@
+-i https://pypi.org/simple
+babel==2.8.0
+blinker==1.4
+certifi==2019.11.28
+chardet==3.0.4
+cloudpickle==1.3.0
+docutils==0.16
+doit==0.32.0
+idna==2.9
+lxml==4.5.0
+macfsevents==0.8.1
+mako==1.1.1
+markdown==3.2.1
+markupsafe==1.1.1
+natsort==7.0.1
+nikola==8.0.4
+piexif==1.1.3
+pillow==7.0.0
+pygments==2.5.2
+pyrss2gen==1.1
+python-dateutil==2.8.1
+pytz==2019.3
+requests==2.23.0
+six==1.14.0
+unidecode==1.1.1
+urllib3==1.25.8
+yapsy==1.12.2
