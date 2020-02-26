@@ -1,2 +1,4 @@
 .doit.db.db
 output/
+.idea/
+cache/

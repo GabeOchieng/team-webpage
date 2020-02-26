@@ -1,0 +1,15 @@
+{% extends 'story.tmpl' %}
+
+{% block content %}
+
+    {% for path, member in data.items() %}
+        {% if path.startswith("team/") %}
+            <b>{{ member["name"] }}</b>
+            <div>
+            <i>{{ member["occupation"] }}</i>
+            <div>{{ member["bio"] }}</div>
+            </div>
+        {% endif %}
+    {% endfor %}
+
+{% endblock %}

@@ -1,2 +1,4 @@
 -i https://pypi.org/simple
 nikola~=8.0
+Jinja2~=2.11
+ruamel.yaml~=0.16
