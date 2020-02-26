@@ -2,3 +2,4 @@
 nikola~=8.0
 Jinja2~=2.11
 ruamel.yaml~=0.16
+bibtexparser~=1.1

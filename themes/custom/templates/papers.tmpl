@@ -1,0 +1,13 @@
+{% extends 'story.tmpl' %}
+
+
+{% block content %}
+    {% for filename, paper in parsed_bibs.items() %}
+        <div>
+            <a href="{{ paper['url'] }}">{{ paper["title"] }}</a>
+        <div>{{ paper["author"] }}</div>
+        <div>{{ paper["journal"] }}</div>
+        <div><a href="/papers/{{ filename }}">bib</a></div>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -219,7 +219,7 @@ THEME_CONFIG = {
 #     )
 
 POSTS = ()
-PAGES = (("pages/team.md", ".", "team.tmpl"),)
+PAGES = (("pages/team.md", ".", "team.tmpl"), ("pages/research.md", ".", "papers.tmpl"))
 
 
 # Below this point, everything is optional
@@ -263,7 +263,7 @@ TIMEZONE = "America/Chicago"
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of {source: relative destination}.
 # Default is:
-# FILES_FOLDERS = {'files': ''}
+FILES_FOLDERS = {"papers": "papers"}
 # Which means copy 'files' into 'output'
 
 # One or more folders containing code listings to be processed and published on
@@ -1340,7 +1340,9 @@ WARN_ABOUT_TAG_METADATA = False
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
-GLOBAL_CONTEXT = {}
+from helper import get_global_context
+
+GLOBAL_CONTEXT = get_global_context()
 
 # Add functions here and they will be called with template
 # GLOBAL_CONTEXT as parameter when the template is about to be
