@@ -7,7 +7,7 @@
             <b>{{ member["name"] }}</b>
             <div>
             <i>{{ member["occupation"] }}</i>
-            <div>{{ member["bio"] }}</div>
+            <div>{{ markdown(member["bio"]) }}</div>
             </div>
         {% endif %}
     {% endfor %}

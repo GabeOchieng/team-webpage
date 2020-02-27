@@ -1,5 +1,6 @@
 from pathlib import Path
 import bibtexparser
+import markdown
 
 THIS_DIR = (Path(__file__) / "..").resolve()
 PAPERS_DIR = THIS_DIR / "papers"
@@ -15,4 +16,4 @@ for b in bibs:
 
 
 def get_global_context() -> dict:
-    return dict(parsed_bibs=parsed_bibs)
+    return dict(parsed_bibs=parsed_bibs, markdown=markdown.markdown)
